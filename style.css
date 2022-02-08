@@ -1,7 +1,7 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0 60vh repeat( 4, 50vh) 40px;
+    grid-template-rows: 0 60vh repeat( 4, auto) 40px;
     grid-gap: 0;
 }
     
@@ -9,15 +9,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-header{
-    grid-column: 1 / 2;
-    background-image: url(./images/pexels1600w.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    color: white;
 }
 
 nav{
@@ -42,6 +33,21 @@ nav a:hover, a:active{
     border-bottom: 3px solid #ffcc00;
 }
       
+
+header{
+    grid-column: 1 / 2;
+    background-image: url(./images/pexels1600w.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+}
+h1{
+    font-size: 45px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -51,6 +57,54 @@ footer, section {
     grid-column: 1 / 2;
 }
 
+
+/*--- About Company Section ---*/
+.about2{
+    grid-column: 1 / 1;
+    background-color:rgb(0,0,100);
+}
+.colL p{
+    text-align: justify;
+    color: white;
+}  
+.colL{
+    width: 40vw;
+    margin:  auto;
+}
+#about-img{
+    width: 50vw;
+    margin-bottom: -4px;
+}
+.img-container {
+    margin: auto 0;
+}
+
+
+/*--- Customers Section ---*/
+#customers{
+    display:block;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#customers h2{
+    text-align: center;
+}
+#customers table{
+    border: 2px solid rgb(0,0,100);
+    border-collapse: collapse;
+}
+#customers th,
+#customers td{
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+#customers th{
+    background-color: rgb(0,0,100);
+    color: white;
+}
+
+
+/*--- Footer ---*/
 footer{
     background-color: rgb(0,0,100);
     color: white;
