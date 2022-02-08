@@ -1,0 +1,57 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0 60vh repeat( 4, 50vh) 40px;
+    grid-gap: 0;
+}
+    
+.grid > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    grid-column: 1 / 2;
+    background-image: url(./images/pexels1600w.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+}
+
+nav{
+    position: sticky;
+    margin: 0 auto;
+    top: 0;
+    font-size: 20px;
+    background-color: rgb(0,0,100,0.8);
+    width: 100vw;
+    height: 30px;
+    text-align: center;
+    padding: 10px 0;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-variant: small-caps;
+    border-right: rgb(255,255,255,0.2);
+}
+nav a:hover, a:active{
+    border-bottom: 3px solid #ffcc00;
+}
+      
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer, section {
+    grid-column: 1 / 2;
+}
+
+footer{
+    background-color: rgb(0,0,100);
+    color: white;
+}
