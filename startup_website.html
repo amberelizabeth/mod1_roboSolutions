@@ -86,15 +86,14 @@
                 <h3>Work With Us</h3>
                 <form id="apply-form">
                     <label for="full_nametxt">Full Name</label>
-                    <input id="full_nametxt" type="text" placeholder="eg. John Smith" required="true">
+                    <input id="full_nametxt" type="text" placeholder="eg. John Smith; min. 8 chars" required pattern=".{8,}">
                     
-                    <label for="experience_txtarea">Experience</label>
-                    <textarea id="experience_txtarea" required="true" placeholder="Shortly list most recent experience here." cols="50" rows="5"></textarea> 
+                    <label for="experience_txt">Experience</label>
+                    <input id="experience_txt" type="number" required placeholder="Enter your years of experience."></input> 
 
                     <label for="vacancies_select">Vacancies</label>
-                    <select id="vacancies_select" required="true">
-                        <optgroup id="vacancy_options">
-                            <option value="none"></option>
+                    <select id="vacancies_select" required>
+                            <option value="">-- Select One --</option>
                             <option value="android">Android Developer</option>
                             <option value="fullstack">Full Stack Developer</option>
                             <option value="consultant">Consultant</option>
@@ -103,8 +102,8 @@
                     </select>
 
                     <label for="jobtype_select">Job Type</label>
-                    <select id="jobtype_select" required="true">
-                            <option value="0"></option>
+                    <select id="jobtype_select" required>
+                            <option value="">-- Select One --</option>
                             <option value="fulltime">Full-time</option>
                             <option value="parttime">Part-time</option>
                             <option value="freelancer">Freelancer</option>
