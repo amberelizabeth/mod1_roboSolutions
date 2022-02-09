@@ -21,6 +21,7 @@
         
         <section id="about" class="about2">
             <div class="colL">
+                <h3>About Us</h3>
                 <p>
                     We aim to facilitate the educational system in the HENA region through e-learning.
                     We work on technical challenges to enhance out skills, expand our knowledge, and provide the best quality software for our customers.
@@ -32,7 +33,7 @@
         </section>
 
         <section id="customers">
-            <h2>Customers</h2>
+            <h3>Customers</h3>
             <table id="customer-table">
                 <tr>
                     <th>Corporate</th>
@@ -69,13 +70,52 @@
         </section>
 
         <section id="fields">
+            <h3>Our Fields</h3>
             <ol id="fields-list">
-                <li></li>
+                <li>SAP</li>
+                <li>Cloud</li>
+                <li>IoT</li>
+                <li>AI</li>
+                <li>Android/iOS</li>
             </ol>
         </section>
 
-        <section class="careers">
-            <p>TEST CAREERS</p>
+        <section id="careers">
+            <div class="img-container">
+                <img id="careers-img" src="./images/careers_handshake.jpg" alt="Photo by fauxels from Pexels">
+            </div>
+            <div class="colR">
+                <h3>Work With Us</h3>
+                <form id="apply-form">
+                    <label for="full_nametxt">Full Name</label>
+                    <input id="full_nametxt" placeholder="eg. John Smith" required="true">
+                    
+                    <label for="experience_txtarea">Experience</label>
+                    <textarea id="experience_txtarea" required="true" placeholder="Shortly list most recent experience here." cols="50" rows="5"></textarea> 
+
+                    <label for="vacancies_select">Vacancies</label>
+                    <select id="vacancies_select" required="true">
+                        <optgroup id="vacancy_options">
+                            <option value="none">Please select one:</option>
+                            <option value="android">Android Developer</option>
+                            <option value="fullstack">Full Stack Developer</option>
+                            <option value="consultant">Consultant</option>
+                            <option value="research">Research</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="jobtype_select">Job Type</label>
+                    <select id="jobtype_select" required="true">
+                        <optgroup id="jobtype_options">
+                            <option value="none">Please select one:</option>
+                            <option value="fulltime">Full-time</option>
+                            <option value="parttime">Part-time</option>
+                            <option value="freelancer">Freelancer</option>
+                            <option value="internship">Internship</option>
+                        </optgroup>
+                    </select>
+                </form>
+            </div>
         </section>
     <footer>
         &copy; 2022 roboSolutions
